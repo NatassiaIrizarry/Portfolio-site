@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap')
+
 /* Start writing your CSS */
 
 /* CSS Reset */
@@ -58,8 +60,49 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+	margin: 0 auto;
+	background-color: #804AD6;
+	font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+header a{
+	color: #fff;
+	font-size: 40px;
+	margin: 4%;
+	text-decoration: none;
 }
 
+nav{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+	color: #fff;
+	font-size: 20px;
+	margin: 4%;
+	text-decoration: none;
+}
+
+/* Work Styles */
+
+#tall_work_gallery{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#tall_work_gallery img{
+	width: 20%;
+	border-radius: 30px;
+	min-height: 500px;
+	margin: 2%;
+}
 
 
 
