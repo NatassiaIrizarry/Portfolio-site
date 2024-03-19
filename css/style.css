@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Dongle&display=swap');
+
+
 
 /* Start writing your CSS */
 
@@ -107,25 +109,67 @@ section{
 	width: 100vw;
 	margin: 0 auto;
 	overflow-y: hidden;
+	font-family: "Dongle", sans-serif;
+		font-size:  40px;
+		font-weight: bold;
+		color: #804AD6;
+	
+	
+}
+
+h2 { 
+	font-family: "Chango", sans-serif;
+	font-size:35px;
+	color: #804AD6;
+}
+h3 { 
+	font-family: "Chango", sans-serif;
+	font-size:  26px;
+	color: #804AD6;
+}
+p {font-family: "Dongle", sans-serif;
+	font-size:  40px;
+	font-weight: bold;
+	color: #804AD6;
 }
 
 .horizontallayout{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	width: 100vw;
 	margin: 0 auto;
 	overflow-y: hidden;
 }
 
+.about_photo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 40%;
+	height: 100vh;
+}
+
+.about_bio{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	height: 100vh;
+}
+
 .purplebg{
 	background-color: #D5C6FF;
+	background-size: cover;
+	background-position: center;
 }
 
 .patternbg{
-	background: ('patternbg.png') center center fixed;
+	background: url('../img/pattern.jpg') center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -142,12 +186,10 @@ section{
 	z-index: 10;
 }
 
-.home_portfolio{
-	background: ('placeholder.jpg') center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+.home_purplebg{
+	background-color: #D5C6FF;
 	background-size: cover;
+	background-position: 50;
 }
 
 /* About Styles */
@@ -156,6 +198,7 @@ section{
 	width: 500px;
 	height: 500px;
 	border-radius: 60%;
+	
 }
 
 /* Work Styles */
