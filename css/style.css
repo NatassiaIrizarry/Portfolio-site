@@ -121,18 +121,36 @@ h2 {
 	font-family: "Chango", sans-serif;
 	font-size:35px;
 	color: #804AD6;
+	margin-top: 50px;
+		margin-bottom: 10px;
 }
 h3 { 
 	font-family: "Chango", sans-serif;
 	font-size:  26px;
 	color: #804AD6;
+	margin-top: 50px;
+		margin-bottom: 10px;
 }
 p {font-family: "Dongle", sans-serif;
 	font-size:  40px;
 	font-weight: bold;
 	color: #804AD6;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-right: 80px;
+		margin-left: 80px;
 }
+ h4 {
+	font-family: "Chango", sans-serif;
+	font-size:  100px;
+	color: #804AD6;
+	text-align: left;
+	margin-top: 300px;
+	background-color: #D5C6FF;
 
+	
+	
+ }
 .horizontallayout{
 	display: flex;
 	justify-content: space-between;
@@ -187,11 +205,35 @@ p {font-family: "Dongle", sans-serif;
 	z-index: 10;
 }
 
+.homepatterns{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100vh;
+	margin: 0 auto;
+}
+
 .home_purplebg{
 	background-color: #D5C6FF;
 	background-size: cover;
-	background-position: 50;
+	background-position: center;
+	width: 100vw;
+	height: 50vh;
 }
+
+.home_patternbg{
+	background: url('../img/pattern.jpg') center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100vw;
+	height: 50vh;
+}
+	
+
 
 /* About Styles */
 
@@ -231,12 +273,31 @@ p {font-family: "Dongle", sans-serif;
 }
 
 .tallboy a{
-	color: #fff;
+	color: #804AD6;
 	text-decoration: none;
 	margin-top: 2%;
+	
 }
 
+/* contact styles */ 
 
+.contact_patternbg {
+	background: url('../img/pattern.jpg') center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100vw;
+	height: 50vh;
+}
+
+.purple_sq {
+	width: 300px;
+	height: 300px;
+	color: #D5C6FF;
+	margin: 100;
+
+}
 
 
 
