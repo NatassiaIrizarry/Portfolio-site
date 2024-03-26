@@ -144,9 +144,10 @@ p {font-family: "Dongle", sans-serif;
 	font-family: "Chango", sans-serif;
 	font-size:  100px;
 	color: #804AD6;
-	text-align: left;
+	align-items: end;
+	text-align:left;
 	margin-top: 300px;
-	background-color: #D5C6FF;
+	background-color:transparent;
 
 	
 	
@@ -185,6 +186,10 @@ p {font-family: "Dongle", sans-serif;
 	background-color: #D5C6FF;
 	background-size: cover;
 	background-position: center;
+	width:100vw; 
+	height: 100vw;
+	
+
 }
 
 .patternbg{
@@ -316,11 +321,19 @@ p {font-family: "Dongle", sans-serif;
 	margin: 1%;
 }
 
+.centerme{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	margin: 1%;
+	flex-wrap: nowrap;
+}
 /* Portfolio Styles */
 
 .work_examples img{
 	width: 80%;
-	height auto;
+	height:auto; 
 	margin: 1%;
 }
 
