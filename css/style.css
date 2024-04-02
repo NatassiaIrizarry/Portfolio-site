@@ -99,6 +99,14 @@ nav a{
 	margin: 4%;
 	text-decoration: none;
 }
+a{ 
+	text-decoration: none;
+	color: #804AD6;
+}
+a:active{
+	color: #804AD6;
+	
+}
 
 section{
 	display: flex;
@@ -142,11 +150,12 @@ p {font-family: "Dongle", sans-serif;
 }
  h4 {
 	font-family: "Chango", sans-serif;
-	font-size:  100px;
+	font-size:  140px;
 	color: #804AD6;
 	align-items: end;
 	text-align:left;
-	margin-top: 300px;
+	margin-top: 70px;
+	padding-left: 50px;
 	background-color:transparent;
 
 	
@@ -187,9 +196,7 @@ p {font-family: "Dongle", sans-serif;
 	background-size: cover;
 	background-position: center;
 	width:100vw; 
-	height: 100vw;
-	
-
+	/*height: 100vh;*/
 }
 
 .patternbg{
@@ -198,6 +205,7 @@ p {font-family: "Dongle", sans-serif;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	/* height: 100%; */
 }
 
 /* Home Styles */
@@ -209,6 +217,15 @@ p {font-family: "Dongle", sans-serif;
     right: -25%;
 	z-index: 10;
 }
+
+
+.home_hero img {
+    position: relative;
+    left: 300px;
+    top: 30px;
+    width: 70%;
+}
+
 
 .homepatterns{
 	display: flex;
@@ -236,6 +253,11 @@ p {font-family: "Dongle", sans-serif;
 	background-size: cover;
 	width: 100vw;
 	height: 50vh;
+}
+
+span.intro_portfolio {
+    position: relative;
+    left: 330px;
 }
 	
 
@@ -316,7 +338,7 @@ p {font-family: "Dongle", sans-serif;
 }
 
 .contact_me img{
-	width: 100px;
+	width: 50px;
 	height: auto;
 	margin: 1%;
 }
@@ -349,8 +371,13 @@ p {font-family: "Dongle", sans-serif;
 }
 
 /* Large devices (desktops, less than 1024px) */
-@media (max-width: 1023.98px) { 
+@media (max-width: 1024) { 
 
+
+	span.intro_portfolio {
+		position: relative;
+		left: 0px;
+	}
 }
 
 /* Medium devices (tablets, less than 744px) */
