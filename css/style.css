@@ -62,7 +62,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 	margin: 0 auto;
 	background-color: #804AD6;
 } 
@@ -71,7 +71,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
+	width: 88%;
 	margin: 0 auto;
 	position: relative;
 	font-family: "Chango", sans-serif;
@@ -86,11 +86,13 @@ header a{
 	text-decoration: none;
 }
 
-nav{
-	display: flex;
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-	z-index: 11;
+    position: relative;
+    left: -20px;
+    z-index: 11;
 }
 
 nav a{
@@ -121,8 +123,6 @@ section{
 		font-size:  40px;
 		font-weight: bold;
 		color: #804AD6;
-	
-	
 }
 
 h2 { 
@@ -150,17 +150,15 @@ p {font-family: "Dongle", sans-serif;
 }
  h4 {
 	font-family: "Chango", sans-serif;
-	font-size:  140px;
+	font-size:  60px;
 	color: #804AD6;
 	align-items: end;
 	text-align:left;
 	margin-top: 70px;
 	padding-left: 50px;
-	background-color:transparent;
-
-	
-	
+	z-index: 10;	
  }
+
 .horizontallayout{
 	display: flex;
 	justify-content: space-between;
@@ -186,7 +184,7 @@ p {font-family: "Dongle", sans-serif;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 60%;
+	width: 90%;
 	height: 100vh;
 	padding: 2%;
 }
@@ -210,18 +208,19 @@ p {font-family: "Dongle", sans-serif;
 
 /* Home Styles */
 
-.home_hero{
-	position: absolute;
+.home_hero {
+    position: absolute;
     top: 3%;
     margin-left: 20%;
-    right: -25%;
-	z-index: 10;
+    right: -16%;
+    z-index: 10;
+    width: 90%;
 }
 
 
 .home_hero img {
     position: relative;
-    left: 300px;
+    left: 250px;
     top: 30px;
     width: 70%;
 }
@@ -233,8 +232,8 @@ p {font-family: "Dongle", sans-serif;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	height: 100vh;
 	margin: 0 auto;
+	height: 100vh;
 }
 
 .home_purplebg{
@@ -255,9 +254,27 @@ p {font-family: "Dongle", sans-serif;
 	height: 50vh;
 }
 
+.home_purplebg_home{
+	background-color: #D5C6FF;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100%;
+}
+
+.home_patternbg_home{
+	background: url('../img/pattern.jpg') center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100vw;
+	height: 100%;
+}
+
 span.intro_portfolio {
     position: relative;
-    left: 330px;
+    left: 70px;
 }
 	
 
