@@ -145,18 +145,19 @@ p {font-family: "Dongle", sans-serif;
 	color: #804AD6;
 		margin-top: 15px;
 		margin-bottom: 15px;
-		margin-right: 80px;
+		margin-right: 80px; 
 		margin-left: 80px;
 }
  h4 {
 	font-family: "Chango", sans-serif;
-	font-size:  60px;
+	font-size:  300%;
 	color: #804AD6;
 	align-items: end;
 	text-align:left;
 	margin-top: 70px;
 	padding-left: 50px;
 	z-index: 10;	
+	font-size: 100px;
  }
 
 .horizontallayout{
@@ -194,7 +195,7 @@ p {font-family: "Dongle", sans-serif;
 	background-size: cover;
 	background-position: center;
 	width:100vw; 
-	/*height: 100vh;*/
+	height: 100vh;
 }
 
 .patternbg{
@@ -220,7 +221,7 @@ p {font-family: "Dongle", sans-serif;
 
 .home_hero img {
     position: relative;
-    left: 250px;
+    left: 390px;
     top: 30px;
     width: 70%;
 }
@@ -282,8 +283,8 @@ span.intro_portfolio {
 /* About Styles */
 
 .aboutmeimg {
-    width: 500px;
-    height: 450px;
+    width: 700px;
+    height: 670px;
     border-radius: 60%;
     margin: 3%;
     padding: 3%;
@@ -323,6 +324,14 @@ span.intro_portfolio {
 	
 }
 
+.work_purplebg {
+	background-color: #D5C6FF;
+	background-size: cover;
+	background-position: center;
+	width:100vw; 
+	
+
+}
 /* contact styles */ 
 
 .contact_patternbg {
