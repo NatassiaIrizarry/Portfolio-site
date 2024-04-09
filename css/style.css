@@ -198,6 +198,12 @@ p {font-family: "Dongle", sans-serif;
 	height: 100vh;
 }
 
+.work_examples{	
+	background-color: #D5C6FF;
+	background-size: cover;
+	background-position: center;
+}
+
 .patternbg{
 	background: url('../img/pattern.jpg') center center fixed;
 	-webkit-background-size: cover;
@@ -357,8 +363,9 @@ span.intro_portfolio {
 	align-items: center;
 	flex-direction: column;
 	margin: 5%;
-	width: 65%;
+	width: 70%;
 	padding: 1%;
+	padding-bottom: 5%;
 	background-color: #D5C6FF;
 	border-radius: 35px;
 }
@@ -383,6 +390,7 @@ span.intro_portfolio {
 	width: 80%;
 	height:auto; 
 	margin: 1%;
+	
 }
 
 
@@ -392,22 +400,90 @@ span.intro_portfolio {
 /* Media Queries */
 
 /* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1439.98px) { 
-
-}
 
 /* Large devices (desktops, less than 1024px) */
-@media (max-width: 1024) { 
+@media (max-width: 1024px) { 
+
+	.aboutmeimg {
+		width: 500px;
+		height: 510px;
+		border-radius: 60%;
+		margin: 3%;
+		padding: 3%;
+	}
 
 
 	span.intro_portfolio {
 		position: relative;
 		left: 0px;
 	}
+
+	.about_bio {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 90%;
+		height: 100vh;
+		padding: 2%;
+		line-height: 33px;
+	}
+	h2 {
+		font-family: "Chango", sans-serif;
+		font-size: 30px;
+		color: #804AD6;
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+
+
 }
 
 /* Medium devices (tablets, less than 744px) */
-@media (max-width: 743.98px) { 
+@media (max-width: 744px) { 
+	
+	.aboutmeimg {
+		width: 350px;
+		height: 335px;
+		border-radius: 60%;
+		margin: 3%;
+		padding: 3%;
+	}
+
+h2 {
+    font-family: "Chango", sans-serif;
+    font-size: 24px;
+    color: #804AD6;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Dongle", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #804AD6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0 auto;
+    overflow-y: hidden;
+    font-family: "Dongle", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #804AD6;
+}
+
 
 }
 
