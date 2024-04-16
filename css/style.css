@@ -237,9 +237,9 @@ p {font-family: "Dongle", sans-serif;
 
 .home_hero img {
     position: relative;
-    left: 390px;
+    left: 480px;
     top: 30px;
-    width: 70%;
+    width: 50%;
 }
 
 
@@ -347,9 +347,12 @@ span.intro_portfolio {
 	background-size: cover;
 	background-position: center;
 	width:100vw; 
-	
-
 }
+
+img.showsmall{
+	display: none;
+}
+
 /* contact styles */ 
 
 .contact_patternbg {
@@ -548,10 +551,23 @@ h4 {
 }
 
 #tall_work_gallery img {
-    width: 500px;
-    border-radius: 30px;
-    height: 800px;
-    margin: 2%;
+	width: 90%;
+	border-radius: 30px;
+	min-height: 200px;
+	margin: 2%;
+}
+
+img.showtall{
+	display: none;
+}
+
+img.showsmall {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 600px !important;
+	margin-bottom: 10px !important;
+	height: 200px !important;
 }
 
 p {
@@ -657,6 +673,16 @@ section {
 		position: relative;
 		top: -20%;
 	}
+
+	img.showsmall {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 400px !important;
+		margin-bottom: 10px !important;
+		height: 200px !important;
+	}
+
 
 	.work_examples p{
 		width: 80%;
