@@ -91,7 +91,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    left: -20px;
+    left: -180px;
     z-index: 11;
 }
 
@@ -225,6 +225,10 @@ p {font-family: "Dongle", sans-serif;
 
 /* Home Styles */
 
+#homepage{
+	overflow: hidden;
+}
+
 .home_hero {
     position: absolute;
     top: 3%;
@@ -237,8 +241,8 @@ p {font-family: "Dongle", sans-serif;
 
 .home_hero img {
     position: relative;
-    left: 480px;
-    top: 30px;
+    left: 370px;
+    top: 60px;
     width: 50%;
 }
 
@@ -307,6 +311,12 @@ span.intro_portfolio {
 }
 
 /* Work Styles */
+
+#workpage{
+	background-color: #D5C6FF;
+    background-size: cover;
+    background-position: center;
+}
 
 #tall_work_gallery{
 	display: flex;
@@ -421,6 +431,26 @@ img.showsmall{
 /* Large devices (desktops, less than 1024px) */
 @media (max-width: 1024px) { 
 
+	#homepage{
+		overflow: hidden;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		left: -140px;
+		z-index: 11;
+	}
+
+	.home_hero img {
+		position: relative;
+		left: 230px;
+		top: 50px;
+		width: 50%;
+	}
+
 	.aboutmeimg {
 		width: 500px;
 		height: 510px;
@@ -471,6 +501,10 @@ img.showsmall{
 
 /* Medium devices (tablets, less than 744px) */
 @media (max-width: 744px) { 
+
+	#homepage{
+		overflow: hidden;
+	}
 
 	header a {
 		color: #fff;
@@ -527,9 +561,14 @@ h4 {
 
 .home_hero img {
     position: relative;
-    left: 410px;
-    top: 50px;
-    width: 70%;
+    left: 450px;
+    top: 40px;
+    width: 40%;
+}
+
+.home_purplebg_home h4{
+	z-index: 100;
+	position: relative;
 }
 
 
@@ -602,6 +641,10 @@ section {
 /* Small devices (landscape phones, less than 430px) */
 @media (max-width: 430px) {
 
+	#homepage{
+		overflow: hidden;
+	}
+
 	header a {
 		color: #fff;
 		font-size: 20px;
@@ -625,10 +668,11 @@ section {
 
 	.home_hero img {
 		position: relative;
-		left: 440px;
-		top: 0px;
-		width: 70%;
+		left: 430px;
+		top: 20px;
+		width: 50%;
 	}
+	
 
 	.home_purplebg_home br{
 		display: none;
@@ -651,6 +695,8 @@ section {
 		font-size: 50px;
 		word-break: break-word;
 		width: 400px;
+		left: -30px;
+		top: 20px;
 	}
 
 	p {
@@ -683,7 +729,41 @@ section {
 		height: 200px !important;
 	}
 
+	.horizontallayout {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 100vw;
+		margin: 0 auto;
+		overflow-y: hidden;
+	}
 
+	.purplebg {
+		background-color: #D5C6FF;
+		background-size: cover;
+		background-position: center;
+		width: 100vw;
+		height: 100%;
+	}
+
+	.about_bio {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		padding: 2%;
+		line-height: 33px;
+	}
+
+	.about_bio p {
+		position: relative;
+		top: -20%;
+		right: -5%;
+	}
 	.work_examples p{
 		width: 80%;
     display: flex;
@@ -729,6 +809,10 @@ section {
 /* X-Small devices (portrait phones, less than 375px) */
 @media (max-width: 375px) {
 
+	#homepage{
+		overflow: hidden;
+	}
+
 	header a {
 		color: #fff;
 		font-size: 16px;
@@ -743,10 +827,19 @@ section {
 
 	.home_hero img {
 		position: relative;
-		left: 420px;
-		top: 0px;
-		width: 50%;
+		left: 360px;
+		top: 20px;
+		width: 60%;
 	}
+
+	.home_purplebg_home h4 {
+		z-index: 100;
+		position: relative;
+		right: 30px;
+		top: 50px;
+	}
+
+
 
 	h4 {
 		font-family: "Chango", sans-serif;
@@ -763,13 +856,24 @@ section {
 	}
 
 	.aboutmeimg {
-		width: 160px;
-		height: 145px;
+		width: 200px;
+		height: 185px;
 		border-radius: 60%;
-		margin: 3%;
+		margin: 11%;
 		padding: 3%;
 		position: relative;
 		top: -33%;
+	}
+	
+	.about_bio h2 {
+		position: relative;
+		top: -30%;
+	}
+
+	.about_bio p {
+		position: relative;
+		top: -30%;
+		right: -1%;
 	}
 
 	#tall_work_gallery img {
