@@ -24,6 +24,9 @@
           <a href="work.html">work</a>
           <a href="contact.html">contact</a>
         </nav>
+
+        <span style="font-size:30px;cursor:pointer;color:#fff;" onclick="openNav()" class="mobilenavlink">&#9776;</span>
+
       </div>
     </header>
 
@@ -39,17 +42,38 @@
       <p>Done with a DSLR Camera edited in Photoshop and Camera Raw. An overall
         focouse on landscape and color, save for my close up work which is based
         more on emotions the power of objects.</p>
-      <h3>Market Street:</h3>
+      <h3>Market Street</h3>
       <img src="img/mstreet.jpg" />
       <h3>The Backroads</h3>
       <img src="img/backroads.jpg" />
-      <h3>Off Trail:</h3>
+      <h3>Off Trail</h3>
       <img src="img/offtrail.jpg" />
-      <h3>The Color of Loathing:</h3>
+      <h3>The Color of Loathing</h3>
       <img src="img/loathing.jpg" />
 
     </section>
 
-    <script src="js/index.js"></script>
+  
+       <!-- Copy Me -->
+       <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+  
+      <script src="js/index.js"></script>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+  
+        <!-- End Copy -->
   </body>
+  
 </html>

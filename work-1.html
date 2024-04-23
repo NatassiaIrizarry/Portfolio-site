@@ -24,6 +24,9 @@
           <a href="work.html">work</a>
           <a href="contact.html">contact</a>
         </nav>
+
+        <span style="font-size:30px;cursor:pointer;color:#fff;" onclick="openNav()" class="mobilenavlink">&#9776;</span>
+
       </div>
     </header>
 
@@ -32,10 +35,10 @@
     <!-- Body copy -->
     <section class="work_examples">
 
-      <h2>Graphic Design:</h2>
+      <h2>Graphic Design</h2>
       <p>A quick look into my work with Graphic design each project has it own
         fleshed out description due to these being meat of body or work.</p>
-      <h3>Flow Posters:</h3>
+      <h3>Flow Posters</h3>
       <p>A series of three mixed media posters, done digitally and with acrylic
         paint based on the prompts: pleasure, youth and violence.</p>
       <img src="img/pleasure.jpg" /><img src="img/youth.jpg" /><img
@@ -46,15 +49,18 @@
         character design work with witch each letter form being wacky and
         unique, but still recognizable.</p>
 
-        <p>You can download it <a href="https://fontstruct.com/fontstructions/show/2262230/monster-mash-up"> here</a></p>
-
+     
+        <p><a href="https://fontstruct.com/fontstructions/show/2262230/monster-mash-up">You can download it here</a></p>
+    
       <img src="img/mm1.jpg" />
       <img src="img/mm2.jpg" />
 
-      <h3>Type Sample Booklet:</h3>
+      <h3>Type Sample Booklet</h3>
       <p>Type Sample booklet for the typeface Nyght Serif by Maksym Kobuzan.</p>
 
-        <p>You can download it  <a href="https://www.tunera.xyz/fonts/nyght-serif"> here</a></p>
+  
+        <p><a href="https://www.tunera.xyz/fonts/nyght-serif">You can download it here</a></p>
+  
 
       <img src="img/bb.png">
       <img src="img/bb1.png">
@@ -69,11 +75,29 @@
 <section>
   <div class="work_purplebg"> </div>
 </section>
-      
-    
   
   
     <!-- end Body copy -->
-    <script src="js/index.js"></script>
+
   </body>
+     <!-- Copy Me -->
+     <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+      <!-- End Copy -->
 </html>

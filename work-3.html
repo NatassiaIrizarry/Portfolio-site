@@ -24,6 +24,9 @@
           <a href="work.html">work</a>
           <a href="contact.html">contact</a>
         </nav>
+
+        <span style="font-size:30px;cursor:pointer;color:#fff;" onclick="openNav()" class="mobilenavlink">&#9776;</span>
+
       </div>
     </header>
 
@@ -34,20 +37,40 @@
     <section class="work_examples">
 
       <!-- body copy -->
-      <h2>Character Prompts:</h2>
+      <h2>Character Prompts</h2>
       <p>A series of cartoon/comic inspired illustrations made with random
         prompts</p>
-      <h3>Playing With a Seal:</h3>
+      <h3>Playing With a Seal</h3>
       <img src="img/seal.png" />
-      <h3>Persona:</h3>
+      <h3>Persona</h3>
       <img src="img/self.png" />
-      <h3>Cooking Spaghetti:</h3>
+      <h3>Cooking Spaghetti</h3>
       <img src="img/cooking.jpg" />
-      <h3>Editorial Illustration:</h3>
+      <h3>Editorial Illustration</h3>
       <p>A illustration for an MIT Technology Review article by Melisa Heikkila,
         about the nightshade tool and the battle against AI art.</p>
       <img src="img/nightshade.jpg" />
 
-      <script src="js/index.js"></script>
+
+         <!-- Copy Me -->
+         <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="contact.html">Contact</a>
+        </div>
+    
+        <script src="js/index.js"></script>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+    
+          <!-- End Copy -->
     </body>
   </html>

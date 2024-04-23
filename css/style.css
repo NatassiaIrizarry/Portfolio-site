@@ -110,6 +110,10 @@ a:active{
 	
 }
 
+span.mobilenavlink{
+	display: none;
+}
+
 section{
 	display: flex;
 	justify-content: center;
@@ -214,6 +218,16 @@ p {font-family: "Dongle", sans-serif;
 	flex-wrap: wrap;
 }
 
+.work_examples a {
+    width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 3rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 .patternbg{
 	background: url('../img/pattern.jpg') center center fixed;
 	-webkit-background-size: cover;
@@ -230,12 +244,12 @@ p {font-family: "Dongle", sans-serif;
 }
 
 .home_hero {
-    position: absolute;
+    position: fixed;
     top: 3%;
     margin-left: 20%;
-    right: -16%;
+    right: 2%;
     z-index: 10;
-    width: 90%;
+    /* width: 90%; */
 }
 
 
@@ -440,8 +454,17 @@ img.showsmall{
 		justify-content: space-between;
 		align-items: center;
 		position: relative;
-		left: -140px;
+		left: -20px;
 		z-index: 11;
+	}
+
+	.home_hero {
+		position: fixed;
+		top: 3%;
+		margin-left: 20%;
+		right: -26%;
+		z-index: 10;
+		/* width: 90%; */
 	}
 
 	.home_hero img {
@@ -551,7 +574,7 @@ h4 {
 }
 
 .home_hero {
-    position: absolute;
+    position: fixed;
     top: 3%;
     margin-left: 20%;
     right: -36%;
@@ -641,6 +664,50 @@ section {
 /* Small devices (landscape phones, less than 430px) */
 @media (max-width: 430px) {
 
+
+	/* Mobile Side Nav */
+
+	span.mobilenavlink{
+		display: block;
+		z-index: 50;
+	  }
+
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #804AD6;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		z-index: 100;
+		display: block;
+	  }
+	  
+	  .sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #fff;
+		display: block;
+		transition: 0.3s;
+	  }
+	  
+	  .sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	  }
+	  
+	  @media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+	  }
+
 	#homepage{
 		overflow: hidden;
 	}
@@ -652,16 +719,20 @@ section {
 		text-decoration: none;
 	}
 
+	nav{
+		display: none;
+	}
+
 	nav a{
 		font-size: 16px;
 		margin: 2%;
 	}
 
 	.home_hero {
-		position: absolute;
-		top: 3%;
+		position: fixed;
+		top: -17%;
 		margin-left: 20%;
-		right: 14%;
+		right: 6%;
 		z-index: 10;
 		width: 150%;
 	}
@@ -679,7 +750,7 @@ section {
 	}
 
 	.home_purplebg_home h4{
-		z-index: 100;
+		z-index: 1;
 		position: relative;
 	}
 
@@ -691,12 +762,13 @@ section {
 		text-align: left;
 		margin-top: 70px;
 		padding-left: 50px;
-		z-index: 10;
+		z-index: 1;
 		font-size: 50px;
 		word-break: break-word;
 		width: 400px;
 		left: -30px;
 		top: 20px;
+		font-size: 53px;
 	}
 
 	p {
@@ -802,8 +874,32 @@ section {
 		border-radius: 35px;
 		position: relative;
 		top: -15%;
+		
 	}
+	
+	.home_hero img {
+        position: relative;
+        left: 430px;
+        top: 324px;
+        width: 50%;
+    }
 
+	h4 {
+        font-family: "Chango", sans-serif;
+        font-size: 300%;
+        color: #804AD6;
+        align-items: end;
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 50px;
+        z-index: 1;
+        font-size: 50px;
+        word-break: break-word;
+        width: 400px;
+        left: -30px;
+        top: 20px;
+        font-size: 53px;
+    }
 }
 
 /* X-Small devices (portrait phones, less than 375px) */
@@ -833,7 +929,7 @@ section {
 	}
 
 	.home_purplebg_home h4 {
-		z-index: 100;
+		z-index: 1;
 		position: relative;
 		right: 30px;
 		top: 50px;
@@ -849,7 +945,7 @@ section {
 		text-align: left;
 		margin-top: 70px;
 		padding-left: 50px;
-		z-index: 10;
+		z-index: 1;
 		font-size: 45px;
 		word-break: break-word;
 		width: 350px;
@@ -882,6 +978,25 @@ section {
 		height: 500px;
 		margin: 2%;
 	}
-
-
+    .home_hero img {
+		position: relative;
+		left: 370px;
+		top: 220px;
+		width: 60%;
+	}
+	h4 {
+        font-family: "Chango", sans-serif;
+        font-size: 300%;
+        color: #804AD6;
+        align-items: end;
+        text-align: left;
+        margin-top: 5px;
+        padding-left: 50px;
+        z-index: 10;
+        font-size: 45px;
+        word-break: break-word;
+        width: 350px;
+        font-size: 45px;
+    }
 }
+

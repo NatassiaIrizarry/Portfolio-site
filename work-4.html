@@ -24,6 +24,9 @@
           <a href="work.html">work</a>
           <a href="contact.html">contact</a>
         </nav>
+
+        <span style="font-size:30px;cursor:pointer;color:#fff;" onclick="openNav()" class="mobilenavlink">&#9776;</span>
+
       </div>
     </header>
     <!-- header -->
@@ -32,24 +35,44 @@
 
     <section class="work_examples">
       <!--body copy-->
-      <h2> Digital Art:</h2>
+      <h2> Digital Art</h2>
       <p>Done in adobe illustrator and Clip studio paint, with focouse on high
         contrast, value and dynamic posing.</p>
-      <h3>Kitten Around:</h3>
+      <h3>Kitten Around</h3>
       <img src="img/kittenaround.jpg" />
-      <h3>Space Buns:</h3>
+      <h3>Space Buns</h3>
       <img src="img/spacebuns.jpg" />
       <h3>Cool Dog</h3>
       <img src="img/cooldog.jpg" />
-      <h2>Fine Art:</h2>
+      <h2>Fine Art</h2>
       <p>Charcoal figure drawing done in my studio class</p>
-      <h3>Man in Chair:</h3>
+      <h3>Man in Chair</h3>
       <img src="img/maninchair.JPG" />
-      <h3>Backs Turned:</h3>
+      <h3>Backs Turned</h3>
       <img src="img/backsturned.JPG" />
 
     </section>
 
-    <script src="js/index.js"></script>
+  
+       <!-- Copy Me -->
+       <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+  
+      <script src="js/index.js"></script>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+  
+        <!-- End Copy -->
   </body>
 </html>
